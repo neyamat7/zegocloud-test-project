@@ -1,0 +1,67 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Sans+Bengali:wght@100..900&display=swap");
+
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+
+* {
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+@theme {
+  --color-dark-clr: #141a22;
+  --color-card-clr: #1f2630;
+  --color-hover-clr: #0d121a;
+  --color-gradient-clr: linear-gradient(270deg, #862c8a 0%, #009c91 100%);
+  --color-card-bg: #f8f8f8;
+  --color-body-bg: #f5f5f5;
+  --color-dark-card-bg: #5a185e;
+  --font-bnen: "Noto Sans Bengali", "Inter", sans-serif;
+}
+
+input:-webkit-autofill {
+  box-shadow: 0 0 0px 1000px #746f6f inset !important;
+  -webkit-box-shadow: 0 0 0px 1000px #9a9881 inset !important;
+}
+
+/* remove dropdown from number input */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.dark input:-webkit-autofill {
+  box-shadow: 0 0 0px 1000px #171010 inset !important;
+  -webkit-box-shadow: 0 0 0px 1000px #171010 inset !important;
+  -webkit-text-fill-color: #e5e7eb !important;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.icon-actions {
+  opacity: 0;
+  transform: translateY(-10px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.group:hover .icon-actions {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.modal-wrapper {
+  opacity: 0;
+  transform: scale(0.9);
+  transition: opacity 0.35s ease, transform 0.35s ease;
+}
+
+.modal-wrapper.open {
+  opacity: 1;
+  transform: scale(1);
+}
+
+button {
+  cursor: pointer;
+}

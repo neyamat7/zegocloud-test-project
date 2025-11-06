@@ -1,0 +1,42 @@
+export const numbersData = [
+  {
+    id: "num_tlsdwbq",
+    label: "Nagad Agent",
+    number: "01998376434",
+    channel: "Nagad",
+    type: "Agent",
+    balance: 640000,
+  },
+  {
+    id: "num_kjs72hf",
+    label: "Bkash Agent",
+    number: "01712345678",
+    channel: "Bkash",
+    type: "Agent",
+    balance: 450000,
+  },
+  {
+    id: "num_qwe92md",
+    label: "Rocket Personal",
+    number: "01876543210",
+    channel: "Rocket",
+    type: "Personal",
+    balance: 220000,
+  },
+  {
+    id: "num_mnb83zx",
+    label: "Nagad Personal",
+    number: "01911223344",
+    channel: "Nagad",
+    type: "Personal",
+    balance: 175000,
+  },
+  {
+    id: "num_vcx64pl",
+    label: "Bkash Personal",
+    number: "01799887766",
+    channel: "Bkash",
+    type: "Personal",
+    balance: 390000,
+  },
+];
